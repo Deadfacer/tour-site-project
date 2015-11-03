@@ -5,7 +5,8 @@
    ========================================================================== */
 
 body {
-	background-color: rgb(245, 245, 245)
+	background-color: #f5f5f5;
+	color: #565a5c;
 }
 
 footer {
@@ -43,6 +44,7 @@ footer {
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	box-shadow: none;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus {
@@ -58,7 +60,7 @@ footer {
 	background-color: rgba(0,0,0,0.35);
 }
 
-.btn-primary:active, .btn-primary.active {
-	background: #007299;
-	box-shadow: none;
+.headers {
+	padding-top: 25px;
+	padding-bottom: 5px;
 }
