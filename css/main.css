@@ -38,6 +38,15 @@ footer {
 	padding-bottom: 20px;
 }
 
+.headers {
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+
+.row-separator{
+	padding-top: 27px;
+}
+
 .btn {
 	padding: 14px 24px;
 	border: 0 none;
@@ -58,9 +67,4 @@ footer {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
 	background-color: rgba(0,0,0,0.35);
-}
-
-.headers {
-	padding-top: 25px;
-	padding-bottom: 5px;
 }

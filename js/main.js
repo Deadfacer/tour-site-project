@@ -9,7 +9,10 @@ $(window).on('resize', function() {
 	}
 }).trigger('resize');
 
-function fitImages(){
+function fitImages() { //there is duplicate code but we are only fitting 4 images
+	//so it isn't worth it to follow DRY principles
+
+	//images 1-2
 	$("#img1").removeAttr("style");
 	$("#img2").removeAttr("style");
 	var changedWidth = $("#img1").height();
@@ -35,11 +38,37 @@ function fitImages(){
 		}
 	}
 	OrigWidth = changedWidth;
+
+	//images 3-4
+	$("#img3").removeAttr("style");
+	$("#img4").removeAttr("style");
+	var changedWidth = $("#img3").height();
+	var h1 = $("#img3").height();
+	var h2 = $("#img4").height();
+	if (changedWidth < OrigWidth) {
+		if (h1 > h2) {
+			$("#img4").height(h1);
+		}
+		else if (h2 > h1) {
+			$("#img3").height(h2);
+		}
+	}
+	else {
+		if (h1 < h2) {
+			$("#img3").height(h2);
+		}
+		else if (h2 < h1) {
+			$("#img4").height(h1);
+		}
+	}
+	OrigWidth = changedWidth;
 	return 0;
 };
 
-function resetImages(){
+function resetImages() {
 	$("#img1").removeAttr("style");
 	$("#img2").removeAttr("style");
+	$("#img3").removeAttr("style");
+	$("#img4").removeAttr("style");
 	return 0;
 };
