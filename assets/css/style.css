@@ -1,0 +1,103 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+.navbar-default {
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .nav > li > a {
+	color: white;
+	font-size: 15px;
+}
+
+.navbar-default .navbar-brand{
+	color: white;
+	font-size: 15px;
+	font-weight: 900;
+}
+*/
+
+/***** Button *****/
+
+.btn {
+	padding: 14px 24px;
+	border: 0 none;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	outline: 0 none;
+}
+
+.btn-primary {
+	background: rgba(255,255,255,0.5);
+	color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+	background-color: rgba(0,0,0,0.35);
+}
+
+/***** Footer *****/
+
+footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    background: #2d2d2d url(img/pattern-3.jpg);
+    color: #aaa;
+}
+
+
+footer p { line-height: 30px; }
+
+.copyright {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/***** Cleanup *****/
+
+.jumbotron {
+	text-align: center;
+	color: #FFFFFF;
+	position: relative;
+	background: #000 url("https://myinterestingfinds.files.wordpress.com/2014/01/img_8910.jpg") center center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	overflow: hidden;
+	padding: 10em inherit;
+}
+
+.headers {
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.text-center {
+	color: rgb(86, 90, 92);
+	padding-bottom: 20px;
+}
+
+.row-separator{
+	padding-top: 27px;
+}
