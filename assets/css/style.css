@@ -187,7 +187,7 @@ nav ul a {
 }
 
 .about-us h3 {
-	margin: 0 40px 30px 50px;
+	margin: 0 40px 30px 15px;
 	padding: 0 0 10px 0;
 	border-bottom: 1px dotted #aaa;
 	font-size: 36px;
@@ -196,7 +196,7 @@ nav ul a {
 }
 
 .about-us h5 {
-	margin-left: 50px;
+	margin-left: 15px;
 	margin-right: 40px;
 	font-size: 20px;
 	font-weight: 400;
@@ -204,7 +204,7 @@ nav ul a {
 }
 
 .about-us p {
-	margin-left: 50px;
+	margin-left: 15px;
 	margin-right: 40px;
 	line-height: 30px;
 }
@@ -246,7 +246,7 @@ footer p { line-height: 30px; }
 	text-align: center;
 	color: #FFFFFF;
 	position: relative;
-	background: #000 url("https://myinterestingfinds.files.wordpress.com/2014/01/img_8910.jpg") center center;
+	background: #000 url("../img/jumbotron/skyline.png") center center;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
