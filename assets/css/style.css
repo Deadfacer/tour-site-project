@@ -157,6 +157,10 @@ nav ul a {
 	padding: 0 2%;
 }
 
+.custom-active {
+	font-weight: bold;
+}
+
 /***** Button *****/
 
 .btn {
