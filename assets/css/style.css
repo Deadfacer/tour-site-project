@@ -281,3 +281,8 @@ footer p { line-height: 30px; }
   margin-top: -115px;
   visibility: hidden;
 }
+
+@media all and (max-width: 799px) {
+    .mobile-content-hide { display: none; }
+}
+
