@@ -8,12 +8,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<style>
-			body {
-				padding-top: 50px;
-				background-color: #f5f5f5;
-			}
+			body { background-color: #f5f5f5; }
 		</style>
 		<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -23,37 +25,36 @@
 	</head>
 	<body>
 
-		<!-- Nav Bar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Tourism</a>
+		<header class="custom-navbar">
+
+			<div class="custom-row">
+				<a class="brand" href="#">N\Y</a>
+
+				<div class="mobile-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<div>
-						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Galleries</a></li>
-							<li><a href="#">Public Places</a></li>
-							<li><a href="#">Restaurants</a></li>
-						</ul>
-					</div>
-				</div><!--/.navbar-collapse -->
-			</div>
-		</nav>
+
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Galleries</a></li>
+						<li><a href="#">Public Places</a></li>
+						<li><a href="#">Restaurants</a></li>
+					</ul>
+				</nav>
+
+			</div> <!-- / custom-row -->
+
+		</header>
 
 		<!-- Main jumbotron -->
 		<div class="jumbotron">
 			<div class="container">
 				<h1>Welcome to NYC</h1>
 				<p>Expand your horizons by exploring the wonders of New York City. <br> Visit one of the most magnificent cities in the world</p>
-				<p><a class="btn btn-primary" href="#" role="button">Learn more</a></p>
+				<p><a class="btn btn-primary" href="#about-us" role="button">Learn more</a></p>
 			</div>
 		</div>
 
@@ -89,6 +90,7 @@
 				</div>
 			</div>
 
+			<span class="anchor" id="must-sees"></span>
 			<div class="container">
 				<div class="headers">
 					<div class="text-center">
@@ -183,6 +185,19 @@
 					</div>
 				</div>
 			</div> -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- about us -->
+						<div id="about-us" class="about-us">
+							<h3>About Us</h3>
+							<h5>Our mission is to give the opportunity to travellers from around the world to visit the five boroughs and to spread the dynamic image of New York City around the world</h5>
+							<p>We are a couple of programmers from New York City who had the dream of spreading our love for New York around the world. Born and raised in the city, we know every nook and cranny, and can give you the perfect NYC experience. <b>Here's how to use our site:</b> We pick out some exceptional places which you simply cannot miss; these are highlighted in the <a href="#must-sees">Must Sees</a> section. We also show amazing galleries in the <a href="#">Galleries Section</a>, incredible places accesible to all in the <a href="#">Public Places Section</a> and some delectable food in the <a href="#">Restaurants Section</a>. We hope you have a pleseant stay in NYC.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div> <!-- /content -->
 
