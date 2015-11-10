@@ -1,36 +1,38 @@
+"use strict"; // Idiomatic Jquery
+
 // ####### Navbar #######
 
 // Sticky Header
 $(window).scroll(function() {
-	if ($(window).scrollTop() > $('.btn').offset().top) {
-		$('.custom-navbar').addClass('sticky');
+	if ($(window).scrollTop() > $(".btn").offset().top) {
+		$(".custom-navbar").addClass("sticky");
 	} else {
-		$('.custom-navbar').removeClass('sticky');
+		$(".custom-navbar").removeClass("sticky");
 	}
 });
 
 // Mobile Navigation
-$('.mobile-toggle').click(function() {
-	if ($('.custom-navbar').hasClass('open-nav')) {
-		$('.custom-navbar').removeClass('open-nav');
+$(".mobile-toggle").click(function() {
+	if ($(".custom-navbar").hasClass("open-nav")) {
+		$(".custom-navbar").removeClass("open-nav");
 	} else {
-		$('.custom-navbar').addClass('open-nav');
+		$(".custom-navbar").addClass("open-nav");
 	}
 });
 
-$('.custom-navbar li a').click(function() {
-	if ($('.custom-navbar').hasClass('open-nav')) {
-		$('.navigation').removeClass('open-nav');
-		$('.custom-navbar').removeClass('open-nav');
+$(".custom-navbar li a").click(function() {
+	if ($(".custom-navbar").hasClass("open-nav")) {
+		$(".navigation").removeClass("open-nav");
+		$(".custom-navbar").removeClass("open-nav");
 	}
 });
 
 // Navigation Scroll
-$('nav a').click(function(event) {
+$("nav a").click(function(event) {
 	var id = $(this).attr("href");
 	var offset = 70;
 	var target = $(id).offset().top - offset;
-	$('html, body').animate({
+	$("html, body").animate({
 		scrollTop: target
 	}, 500);
 	event.preventDefault();
@@ -40,14 +42,14 @@ $('nav a').click(function(event) {
 
 var OrigWidth = $("#img1").width();
 
-$(window).on('resize', function() {
+$(window).on("resize", function() {
 	if ($(window).width() > 991) {
 		fitImages();
 	}
 	else {
 		resetImages();
 	}
-}).trigger('resize');
+}).trigger("resize");
 
 function fitImages() { // there is duplicate code but we are only fitting 4 images
 	// so it isn't worth it to follow DRY principles
@@ -79,31 +81,33 @@ function fitImages() { // there is duplicate code but we are only fitting 4 imag
 	}
 	OrigWidth = changedWidth;
 
+	var NextOrigWidth = $("#img3").width();
+
 	// images 3-4
 	$("#img3").removeAttr("style");
 	$("#img4").removeAttr("style");
-	var changedWidth = $("#img3").height();
-	var h1 = $("#img3").height();
-	var h2 = $("#img4").height();
-	if (changedWidth < OrigWidth) {
-		if (h1 > h2) {
-			$("#img4").height(h1);
+	var NextChangedWidth = $("#img3").height();
+	var h3 = $("#img3").height();
+	var h4 = $("#img4").height();
+	if (NextChangedWidth < NextOrigWidth) {
+		if (h3 > h4) {
+			$("#img4").height(h3);
 		}
-		else if (h2 > h1) {
-			$("#img3").height(h2);
+		else if (h4 > h3) {
+			$("#img3").height(h4);
 		}
 	}
 	else {
-		if (h1 < h2) {
-			$("#img3").height(h2);
+		if (h3 < h4) {
+			$("#img3").height(h4);
 		}
-		else if (h2 < h1) {
-			$("#img4").height(h1);
+		else if (h4 < h3) {
+			$("#img4").height(h3);
 		}
 	}
-	OrigWidth = changedWidth;
+	NextOrigWidth = NextChangedWidth;
 	return 0;
-};
+}
 
 function resetImages() {
 	$("#img1").removeAttr("style");
@@ -111,4 +115,4 @@ function resetImages() {
 	$("#img3").removeAttr("style");
 	$("#img4").removeAttr("style");
 	return 0;
-};
+}
