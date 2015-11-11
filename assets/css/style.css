@@ -28,8 +28,8 @@ a, a:hover { text-decoration: none; }
 	padding-top: 17px;
 	background: none;
 	overflow: hidden;
-	-webkit-transition: all .5s;
-	transition: all .5s;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 	opacity: 0;
 	top: -100px;
 	padding-bottom: 6px;
@@ -157,9 +157,7 @@ nav ul a {
 	padding: 0 2%;
 }
 
-.custom-active {
-	font-weight: bold;
-}
+.custom-active { font-weight: bold; }
 
 /***** Button *****/
 
@@ -180,9 +178,7 @@ nav ul a {
 	color: #ffffff;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-	background-color: rgba(0,0,0,0.35);
-}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary { background-color: rgba(0,0,0,0.35); }
 
 /***** About Us *****/
 
@@ -232,7 +228,7 @@ nav ul a {
 footer {
 	margin-top: 60px;
 	padding: 30px 0;
-	background: #2d2d2d url(img/pattern-3.jpg);
+	background: #2d2d2d;
 	color: #aaa;
 }
 
